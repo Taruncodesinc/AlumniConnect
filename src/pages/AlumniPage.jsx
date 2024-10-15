@@ -25,8 +25,9 @@ console.log(alumniList);
   );
 
   return (
+    <>
     <div className="font-montserrat bg-gray-900 text-white min-h-screen h-[100vh] w-[100vw]">
-      <Navbar />
+      <Navbar/>
       <div className="px-4 py-4 md:px-6 md:py-6">
         <h1 className="text-2xl font-poppins mb-4">Search Alumni</h1>
 
@@ -72,6 +73,7 @@ console.log(alumniList);
       </div>
       <MobileNav/>
     </div>
+     </>
   );
 };
 
