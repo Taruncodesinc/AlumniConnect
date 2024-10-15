@@ -38,7 +38,7 @@ const ChatRoom = () => {
    
     <div className="bg-gray-900 text-white min-h-screen p-4">
       <h2 className="text-2xl font-bold mb-4">Chat with {chatUser.name}</h2>
-      <div className="p-4 bg-gray-800 rounded-lg shadow-md mb-4  h-[90vh]">
+      <div className="p-4  rounded-lg shadow-md mb-4  h-[90vh] bg-red-600">
         {/* Chat Messages */}
         <div className="space-y-4">
           {messages.map((message) => (
