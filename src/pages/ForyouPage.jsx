@@ -107,7 +107,7 @@ const HomeSection = () => {
           );
       case 'Calendar':
         return (
-          <div className="bg-[#2b2e3b] p-6 rounded-lg shadow-md transform transition-all duration-500 ease-in-out w-[100vw] h-[100vh]">
+          <div className="bg-[#2b2e3b] p-6 rounded-lg shadow-md transform transition-all duration-500 ease-in-out">
             <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-2">
               <FaCalendarAlt className="text-[#64ffda]" /> Upcoming Events
             </h2>
@@ -130,7 +130,7 @@ const HomeSection = () => {
 
       case 'RecentUpdates':
         return (
-          <div className="bg-[#2b2e3b] p-6 rounded-lg shadow-md transform transition-all duration-500 ease-in-out h-[100vh] w-[100vw] ">
+          <div className="bg-[#2b2e3b] p-6 rounded-lg shadow-md transform transition-all duration-500 ease-in-out ">
             <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-2">
               <FaNewspaper className="text-[#64ffda]" /> Recent Updates
             </h2>

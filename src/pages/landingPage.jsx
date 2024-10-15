@@ -15,7 +15,7 @@ const LandingPage = () => { // Landing page component
   };
 
   return (
-    <div className='bg-[#121212] flex flex-col min-h-screen font-montserrat'> {/* Darker background for the dark theme */}
+    <div className='bg-[#121212] flex flex-col min-h-screen font-montserrat h-[100vh] w-[100vw]'> {/* Darker background for the dark theme */}
       <Navbar /> {/* Renders the navigation bar at the top */}
 
       {/* Top section: Welcome message */}
