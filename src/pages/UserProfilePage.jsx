@@ -11,7 +11,7 @@ const UserProfilePage = () => {
   return (
     <div>
       <Navbar />
-      <div className='bg-black'>
+      <div className='bg-black h-[100vh] w-[100vw]'>
         {
           activeUser ? (
             // Only pass primitive values to UserProfile

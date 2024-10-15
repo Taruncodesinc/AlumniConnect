@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='bg-black'>
+    <div className='bg-black text-white'>
       <div className='flex justify-between items-center px-4 py-2'>
         {/* Left side (Logo and Menu Button) */}
         <div className='left-side flex items-center gap-4'>
