@@ -88,10 +88,10 @@ navigate("/Messaging")
             <FaBuilding className="text-2xl text-white" />
             <div className="font-semibold text-white font-montserrat">
             <p className=' text-black '>Skills</p>
-             <ul className='flex gap-10 list-disc'>
+             <ul className='flex gap-4 flex-grow w-fit list-disc'>
               <li className=''>Web3</li>
               <li>React</li>
-              <li>Solidity</li>
+           
              </ul>
             </div>
           </div>
@@ -115,7 +115,7 @@ navigate("/Messaging")
       </div>
     </div>
     
-    <div className='hidden sm:flex sm:flex-col right gap-10'>
+    <div className='hidden lg:flex sm:flex-col right gap-10'>
       <div>
       <p className='font-montserrat text-white font-semibold text-2xl'>Alumni Network</p>
       <div className='alummi-network bg-[#a9a9a9] rounded-lg w-[400px] '>

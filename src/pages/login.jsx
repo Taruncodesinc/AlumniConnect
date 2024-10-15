@@ -26,7 +26,7 @@ const Login = () => {
   }, [currentUser, navigate]); // Depend on currentUser
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900">
+    <div className="w-[100vw] flex items-center justify-center bg-gray-900 h-[100vh]">
       <div className="bg-gray-800 p-8 rounded-lg shadow-md w-full max-w-sm">
         <h2 className="text-2xl font-bold text-white text-center mb-6">Login</h2>
         <form onSubmit={handleLogin} className="space-y-6">

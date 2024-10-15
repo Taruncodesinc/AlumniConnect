@@ -70,7 +70,7 @@ const Form = () => {
 
   return (
     <>
-    <div className="flex flex-col items-centerjustify-center  p-4 sm:w-[40%]">
+    <div className="flex flex-col items-center justify-center  p-4 sm:w-[40%] w-[100vw]">
      
 
       <div className="text-center text-white mb-6">

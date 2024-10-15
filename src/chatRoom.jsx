@@ -147,7 +147,7 @@ const MessagingPage = () => {
         <Navbar/>
         <div className="flex flex-grow">
           {/* Recent Chats Section */}
-          <div className="w-[25%] p-4 bg-[#a9a9a9] hidden md:block">
+          <div className="w-[25%] p-4 bg-[#a9a9a9] hidden lg:block">
             <h1 className="text-2xl font-bold mb-4 text-black">Recent Updates</h1>
             <input
               type="text"
@@ -198,7 +198,7 @@ const MessagingPage = () => {
 
           {/* Chat Details Section  */}
          
-         <div className="w-[25%] hidden bg-[#a9a9a9] p-4 text-black md:flex flex-col justify-around">
+         <div className="w-[25%] hidden bg-[#a9a9a9] p-4 text-black lg:flex flex-col justify-around">
             <div className='text-black flex justify-between flex-col'>
             <div className='flex justify-between'>
             <h2 className="text-lg font-bold">Chat Details</h2>
