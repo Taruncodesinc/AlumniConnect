@@ -74,9 +74,7 @@ const UserProfile = ({ id, name, education, workExperience, role }) => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="">
-        <MobileNav />
-      </div>
+     
     </div>
   );
 };

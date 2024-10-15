@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../navbar';
 import { useSelector } from 'react-redux';
 import UserProfile from '../UserProfile';
+import MobileNav from '../MobileNav';
 
 const UserProfilePage = () => {
   // Select the current user from the Redux store
@@ -30,7 +31,7 @@ const UserProfilePage = () => {
         }
      
       </div>
-      
+      <MobileNav/>
     </div>
   );
 };

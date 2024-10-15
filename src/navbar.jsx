@@ -18,16 +18,16 @@ const Navbar = () => {
         <div className='left-side flex items-center gap-4'>
           {/* University Icon */}
           <button className='hidden sm:block'>
-            <FaUniversity />
+            <FaUniversity className='text-white' /> {/* Force white color */}
           </button>
 
           {/* Hamburger Menu Button */}
           <button className='sm:hidden' onClick={toggleMenu}>
-            <CiMenuFries className='text-2xl' />
+            <CiMenuFries className='text-2xl text-white' /> {/* Force white color */}
           </button>
 
           {/* Logo */}
-          <span className='font-poppins text-xl'>Alumni Connect</span>
+          <span className='font-poppins text-xl' style={{ color: 'white' }}>Alumni Connect</span>
         </div>
       </div>
 
@@ -38,7 +38,7 @@ const Navbar = () => {
         } z-50`}
         style={{ height: '100vh' }} // Fullscreen menu
       >
-        <button onClick={toggleMenu} className='absolute top-4 right-4 text-2xl'>
+        <button onClick={toggleMenu} className='absolute top-4 right-4 text-2xl text-white'>
           <IoMdClose />
         </button>
 
