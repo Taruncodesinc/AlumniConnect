@@ -23,7 +23,7 @@ const MessagingPage = () => {
 
   return (
     <>
-    <div className="flex flex-col  text-white h-[100vh] bg-green-500  w-[100vw]">
+    <div className="flex flex-col  text-white h-[100vh]   w-[100vw]">
       <Navbar />
       <div className="flex-grow p-4 "> {/* This allows the content area to grow */}
         <h1 className="text-3xl font-bold mb-6">Recent Chats</h1>
