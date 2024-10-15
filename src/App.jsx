@@ -1,37 +1,42 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LoginPage from './pages/LoginPage';
-import LandingPage from './pages/LandingPage';
-import JobsPage from './pages/JobsPage';
+import LoginPage from './pages/loginPage';
+
+import LandingPage from './pages/landingPage';
+import JobsPage from './pages/jobsPage';
 import UserProfilePage from './pages/UserProfilePage';
-import Login from './pages/Login';  // Make sure LoginPage and Login are not duplicates
-import HomeSection from './pages/ForyouPage';  // Adjust name if necessary
+import Login from './pages/login';
+import HomeSection from './pages/ForyouPage';
 import AlumniSearchPage from './pages/AlumniPage';
 import MessagingPage from './pages/Messaging';
-import ChatRoom from './ChatRoom';
+import ChatRoom from './chatRoom';
 import NotificationPage from './pages/NotificationPage';
 import PostUploadPage from './pages/PostUploadPage';
-import HomePage from './pages/HomePage';  // Ensure this is intended
+import HomePage from './pages/HomePage';
+
 
 const App = () => {
   return (
-    <Router>
-      <div className=''>
+    <div className=''>
+      
         <Routes>
-          <Route path='/' element={<LandingPage />} />
-          <Route path='/login' element={<LoginPage />} />
-          <Route path='/try-login' element={<Login />} />
-          <Route path='/job-portal' element={<JobsPage />} />
-          <Route path='/user-profile' element={<UserProfilePage />} />
-          <Route path='/alumni-search' element={<AlumniSearchPage />} />
-          <Route path='/messaging' element={<MessagingPage />} />
+          <Route path='/' element={<LandingPage/>} />
+          <Route path='/login' element={<LoginPage/>}/>
+          <Route path='/trylogin' element={<Login/>}/>
+          <Route path='/jobPortal' element={<JobsPage/>}/>
+          <Route path='/UserProfile' element={<UserProfilePage/>}/>
+       
+          <Route path='/AlumniSearchPage' element={<AlumniSearchPage/>}/>
+          <Route path='/Messaging' element={<MessagingPage/>}/>
           <Route path="/chat/:chatId" element={<ChatRoom />} />
-          <Route path='/notifications' element={<NotificationPage />} />
-          <Route path='/post-upload' element={<PostUploadPage />} />
-          <Route path='/home' element={<HomeSection />} />
+          <Route path='/Notifications' element={<NotificationPage/>}/>
+          <Route path='/PostUploadPage' element={<PostUploadPage/>}/>
+          <Route path='/home' element={<HomeSection/>}/>
+    
         </Routes>
-      </div>
-    </Router>
+     
+   
+    </div>
   );
 }
 
