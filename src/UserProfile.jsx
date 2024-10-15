@@ -5,7 +5,8 @@ import MobileNav from './MobileNav';
 
 const UserProfile = ({ id, name, education, workExperience, role }) => {
   return (
-    <div className="bg-gray-800 text-white rounded-lg shadow-lg p-6 font-montserrat h-[100vh] w-[100vw]">
+    <>
+     <div className="bg-gray-800 text-white rounded-lg shadow-lg p-6 font-montserrat h-[100vh] w-[100vw] ">
       
       {/* Top Section: Profile Picture and Name */}
       <div className="flex flex-col items-center mb-6">
@@ -74,8 +75,11 @@ const UserProfile = ({ id, name, education, workExperience, role }) => {
       </div>
 
       {/* Mobile Navigation */}
-      <MobileNav/>
+      
     </div>
+    <MobileNav/>
+    </>
+   
   );
 };
 
