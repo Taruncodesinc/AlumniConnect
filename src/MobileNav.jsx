@@ -15,7 +15,7 @@ const MobileNav = () => {
   };
   
   return (
-    <div>
+    <div className='bg-black'>
       <ul className='flex justify-between w-full items-baseline text-[20px] text-white py-4 px-2'>
         <NavLink to='/home'><IoMdHome /></NavLink>
         <NavLink to='/jobPortal'><FaSearch /></NavLink>
