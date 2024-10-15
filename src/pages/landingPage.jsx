@@ -15,8 +15,8 @@ const LandingPage = () => { // Landing page component
   };
 
   return (
-    <div className='bg-[#121212] flex flex-col min-h-screen'> {/* Darker background for the dark theme */}
-      <Navbar/> {/* Renders the navigation bar at the top */}
+    <div className='bg-[#121212] flex flex-col min-h-screen font-montserrat'> {/* Darker background for the dark theme */}
+      <Navbar /> {/* Renders the navigation bar at the top */}
 
       {/* Top section: Welcome message */}
       <div className='flex items-center justify-center flex-col mt-10'>
@@ -27,25 +27,36 @@ const LandingPage = () => { // Landing page component
 
       {/* Middle of the landing page */}
       <div className='middle text-white flex flex-col items-center justify-center mt-5 gap-5'>
-       
-        {/* Community Section */}
-        <div className='bg-[#2C3141] px-4 py-3 flex items-center gap-3 rounded-[10px] shadow-lg transition duration-300 hover:bg-[#3E4455]'>
-          <BsFillPeopleFill className='text-blue-500 text-2xl' /> {/* Community icon */}
-          <p className='font-semibold text-lg'>Community</p> {/* Text describing community */}
+        {/* Banner Section */}
+        <div className='flex flex-col sm:flex-row gap-4 justify-center'>
+          {/* Community Banner */}
+          <div className='bg-[#2C3141] px-6 py-4 flex items-center gap-3 rounded-lg shadow-lg transition duration-300 hover:bg-[#3E4455] w-full sm:w-1/3'>
+            <BsFillPeopleFill className='text-blue-500 text-3xl' /> {/* Community icon */}
+            <div>
+              <p className='font-semibold text-lg'>Community</p> {/* Text describing community */}
+              <p className='text-gray-300 text-sm'>Join and connect with fellow alumni!</p>
+            </div>
+          </div>
+
+          {/* Opportunity Banner */}
+          <div className='bg-[#2C3141] px-6 py-4 flex items-center gap-3 rounded-lg shadow-lg transition duration-300 hover:bg-[#3E4455] w-full sm:w-1/3'>
+            <IoBriefcase className='text-blue-500 text-3xl' /> {/* Briefcase icon */}
+            <div>
+              <p className='font-semibold text-lg'>Opportunities</p> {/* Text describing opportunities */}
+              <p className='text-gray-300 text-sm'>Discover job openings and internships!</p>
+            </div>
+          </div>
+
+          {/* Events Banner */}
+          <div className='bg-[#2C3141] px-6 py-4 flex items-center gap-3 rounded-lg shadow-lg transition duration-300 hover:bg-[#3E4455] w-full sm:w-1/3'>
+            <FaCalendarAlt className='text-blue-500 text-3xl' /> {/* Calendar icon */}
+            <div>
+              <p className='font-semibold text-lg'>Events</p> {/* Text describing events */}
+              <p className='text-gray-300 text-sm'>Stay updated on alumni events!</p>
+            </div>
+          </div>
         </div>
 
-        {/* Opportunity Section */}
-        <div className='bg-[#2C3141] px-4 py-3 flex items-center gap-3 rounded-[10px] shadow-lg transition duration-300 hover:bg-[#3E4455]'>
-          <IoBriefcase className='text-blue-500 text-2xl' /> {/* Briefcase icon */}
-          <p className='font-semibold text-lg'>Opportunity</p> {/* Text describing opportunities */}
-        </div>
-
-        {/* Events Section */}
-        <div className='bg-[#2C3141] px-4 py-3 flex items-center gap-3 rounded-[10px] shadow-lg transition duration-300 hover:bg-[#3E4455]'>
-          <FaCalendarAlt className='text-blue-500 text-2xl' /> {/* Calendar icon */}
-          <p className='font-semibold text-lg'>Events</p> {/* Text describing events */}
-        </div>
-       
         {/* Bottom part: Call to action */}
         <div className='bottom mt-10 flex flex-col gap-4'>
           {/* Join Us section */}

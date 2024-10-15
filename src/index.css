@@ -41,6 +41,10 @@
     /* Perspective effect to enhance 3D */
     transform: perspective(1000px) translateZ(0);
 }
+.mandatory {
+  color: red;
+}
+
 
 
 

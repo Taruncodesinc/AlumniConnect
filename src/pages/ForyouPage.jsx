@@ -6,7 +6,8 @@ import 'react-calendar/dist/Calendar.css';
 import MobileNav from '../MobileNav';
 import Navbar from '../navbar';
 import HomePage from './HomePage';
-
+import { FaMap,FaFileDownload } from "react-icons/fa";
+import images from '../assets/images';
 const HomeSection = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [activeTab, setActiveTab] = useState('ForYou');
@@ -15,73 +16,95 @@ const HomeSection = () => {
     <Navbar/>
     switch (activeTab) {
       case 'ForYou':
-        return (
-          <div className="bg-[#2b2e3b] p-2 rounded-lg shadow-md transform transition-all duration-500 ease-in-out">
-            <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-2">
-              <FaStar className="text-yellow-400" /> Content For You
-            </h2>
+          return (
+            <div className="bg-[#2b2e3b] p-2 rounded-lg shadow-md transform transition-all duration-500 ease-in-out">
+              <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-2">
+                <FaStar className="text-yellow-400" /> Content For You
+              </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Article Section */}
-              <div className="bg-[#333646] p-5 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
-                <h3 className="text-xl font-montserrat flex items-center gap-2 mb-4 text-[#64ffda]">
-                  <FaNewspaper className="text-[#64ffda]" /> Recommended Articles
-                </h3>
-                <ul className="space-y-3 text-gray-300">
-                  <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
-                    Understanding JavaScript Closures
-                  </li>
-                  <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
-                    How to Use React Hooks Effectively
-                  </li>
-                  <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
-                    Mastering CSS Grid Layout
-                  </li>
-                </ul>
-               
-              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* Article Section */}
+                <div className="bg-[#333646] p-5 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
+                  <h3 className="text-xl font-montserrat flex items-center gap-2 mb-4 text-[#64ffda]">
+                    <FaNewspaper className="text-[#64ffda]" /> Recommended Articles
+                  </h3>
+                  <ul className="space-y-3 text-gray-300">
+                    <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                      Understanding JavaScript Closures
+                    </li>
+                    <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                      How to Use React Hooks Effectively
+                    </li>
+                    <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                      Mastering CSS Grid Layout
+                    </li>
+                  </ul>
+                  
+                  {/* Recommended Roadmaps Section */}
+                  <h3 className="text-xl font-montserrat flex items-center gap-2 mb-4 mt-2 text-[#64ffda]">
+                    <FaMap className="text-[#64ffda]" /> Recommended Roadmaps
+                  </h3>
+                  <ul className="space-y-3 text-gray-300">
+                    <li className="border-b border-gray-600 pb-2 flex justify-between hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                      Frontend Development Roadmap <a href={images.frontend} download> <FaFileDownload/></a>
+                    </li>
+                    <li className="border-b border-gray-600 pb-2 flex justify-between  hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                      Backend Development Roadmap<a href={images.backend} download> <FaFileDownload/></a>
+                    </li>
+                    <li className="border-b border-gray-600 pb-2 flex justify-between hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                      Full Stack<a href={images.fullSatck} download> <FaFileDownload/></a>
+                    </li>
+                    <li className="border-b border-gray-600 pb-2 flex justify-between hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                      Game Developer <a href={images.gameDev} download> <FaFileDownload/></a>
+                    </li>
+                    <li className="border-b border-gray-600 pb-2 flex justify-between hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                    Ai and data scientist<a href={images.aiDs} download> <FaFileDownload/></a>
+                    </li>
+                    <div className='flex justify-center items-center'>
+                      <h1 className='font-poppins text-gray-300'>More coming soon....</h1>
+                    </div>
+                  </ul>
+                </div>
 
-              {/* Video Section */}
-              <div className="bg-[#333646] p-5 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
-                <h3 className="text-xl font-montserrat flex items-center gap-2 mb-4 text-[#64ffda]">
-                  <MdVideoLibrary className="text-[#64ffda]" /> Recommended Videos
-                </h3>
-                <ul className="space-y-3 text-gray-300">
-                  <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
-                    React State Management with Redux
-                  </li>
-                  <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
-                    Building a Full Stack App with Node.js
-                  </li>
-                  <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
-                    Tailwind CSS Best Practices
-                  </li>
-                </ul>
-              </div>
+                {/* Video Section */}
+                <div className="bg-[#333646] p-5 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
+                  <h3 className="text-xl font-montserrat flex items-center gap-2 mb-4 text-[#64ffda]">
+                    <MdVideoLibrary className="text-[#64ffda]" /> Recommended Videos
+                  </h3>
+                  <ul className="space-y-3 text-gray-300">
+                    <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                      React State Management with Redux
+                    </li>
+                    <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                      Building a Full Stack App with Node.js
+                    </li>
+                    <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                      Tailwind CSS Best Practices
+                    </li>
+                  </ul>
+                </div>
 
-              {/* Suggestions Section */}
-              <div className="bg-[#333646] p-5 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
-                <h3 className="text-xl font-montserrat flex items-center gap-2 mb-4 text-[#64ffda]">
-                  <FaStar className="text-[#64ffda]" /> Suggested for You
-                </h3>
-                <ul className="space-y-3 text-gray-300">
-                  <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
-                    Participate in the upcoming Hackathon
-                  </li>
-                  <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
-                    Learn GraphQL with free resources
-                  </li>
-                  <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
-                    Join our Web Development Bootcamp
-                  </li>
-                </ul>
+                {/* Suggestions Section */}
+                <div className="bg-[#333646] p-5 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
+                  <h3 className="text-xl font-montserrat flex items-center gap-2 mb-4 text-[#64ffda]">
+                    <FaStar className="text-[#64ffda]" /> Suggested for You
+                  </h3>
+                  <ul className="space-y-3 text-gray-300">
+                    <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                      Participate in the upcoming Hackathon
+                    </li>
+                    <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                      Learn GraphQL with free resources
+                    </li>
+                    <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                      Join our Web Development Bootcamp
+                    </li>
+                  </ul>
+                </div>
               </div>
-              
+              <HomePage />
             </div>
-            <HomePage/>
-          </div>
-        );
-
+          );
       case 'Calendar':
         return (
           <div className="bg-[#2b2e3b] p-6 rounded-lg shadow-md transform transition-all duration-500 ease-in-out w-[100vw] h-[100vh]">
