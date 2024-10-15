@@ -15,13 +15,18 @@ const LandingPage = () => { // Landing page component
   };
 
   return (
-    <div className='bg-[#121212] flex flex-col min-h-screen font-montserrat h-[100vh] w-[100vw]'> {/* Darker background for the dark theme */}
+  
+    <div className='bg-[#121212] flex flex-col min-h-screen font-montserrat  w-[100vw]'> {/* Darker background for the dark theme */}
       <Navbar /> {/* Renders the navigation bar at the top */}
 
       {/* Top section: Welcome message */}
       <div className='flex items-center justify-center flex-col mt-10'>
-        <img src={images.peoples} className='h-[200px] aspect-square mb-4 rounded-full shadow-lg' alt="Welcome" /> {/* Image with rounded and shadow effect */}
-        <p className='font-extrabold font-poppins text-white text-4xl'>Welcome to Alumni Connect</p> {/* Main heading with larger font */}
+        <div className='hidden sm:block w-[100vw] '>
+          <img src={images.desktopPeople} className='h-[350px] mx-auto'></img>
+
+        </div>
+        <img src={images.peoples} className='h-[200px] aspect-square mb-4 rounded-full shadow-lg sm:hidden' alt="Welcome" /> {/* Image with rounded and shadow effect */}
+        <p className='font-extrabold font-poppins text-white text-3xl mt-4 '>Welcome to Alumni Connect</p> {/* Main heading with larger font */}
         <p className='font-light font-montserrat text-gray-400 text-lg'>Connecting Alumni, Fostering Success</p> {/* Subheading with lighter text color */}
       </div>
 
@@ -67,13 +72,13 @@ const LandingPage = () => { // Landing page component
             {/* Buttons for Join Now and Login */}
             <div className='buttons flex gap-4 items-center mb-4'>
               {/* Join Now Button */}
-              <button className='flex items-center gap-2 px-5 py-2 bg-gray-700 rounded-[10px] text-white hover:bg-gray-600 transition duration-300'>
+              <button className='flex items-center gap-2 px-5 py-2 bg-white rounded-[10px] text-black hover:bg-gray-600 transition duration-300'>
                 <MdOutlineJoinFull /> {/* Join icon */}
                 <NavLink to="/login">Join Now</NavLink> {/* Links to the Login page */}
               </button>
               
               {/* Login Button */}
-              <button className='px-5 py-2 bg-gray-700 rounded-[10px] text-white hover:bg-gray-600 transition duration-300' onClick={handleNav}>
+              <button className='px-5 py-2 bg-white rounded-[10px] text-black hover:bg-gray-600 transition duration-300' onClick={handleNav}>
                 Login {/* Placeholder for login action */}
               </button>
             </div>

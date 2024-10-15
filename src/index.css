@@ -47,7 +47,10 @@ body{
 .mandatory {
   color: red;
 }
-
+.set-bg{
+  background-image: url(./assets/singUpbg.png);
+  background-size: cover;
+background-position: center;}
 
 
 

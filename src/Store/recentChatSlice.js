@@ -4,9 +4,9 @@ const recentChatsSlice = createSlice({
   name: "recentChats",
   initialState: {
     chats: [
-      { id: 1, name: "Alice Johnson", lastMessage: "See you tomorrow!", time: "10:30 AM" },
-      { id: 2, name: "Bob Smith", lastMessage: "Let's catch up later.", time: "9:45 AM" },
-      { id: 3, name: "Charlie Brown", lastMessage: "Can you send me the files?", time: "Yesterday" },
+      { id: 1, name: "Aakanksha", lastMessage: "See you tomorrow!", time: "10:30 AM" },
+      { id: 2, name: "Laxmi", lastMessage: "Let's catch up later.", time: "9:45 AM" },
+      { id: 3, name: "Mambo Joy", lastMessage: "Can you send me the files?", time: "Yesterday" },
       // Add more dummy chat data as needed
     ],
   },

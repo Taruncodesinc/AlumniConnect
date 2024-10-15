@@ -27,11 +27,21 @@ const Navbar = () => {
           </button>
 
           {/* Logo */}
-          <span className='font-poppins text-xl' style={{ color: 'white' }}>Alumni Connect</span>
+          <span className='font-poppins text-xl ' style={{ color: 'white' }} >Alumni Connect</span>
+        
         </div>
+        <div className='hidden sm:flex gap-4'>
+        <ul className='menu-opt flex gap-5'>
+          <NavLink to='/home'>Home</NavLink>
+          <NavLink to='/AlumniSearchPage'>Alumni</NavLink>
+          <NavLink to='/jobPortal'>Job Board</NavLink>
+          <NavLink>Contact</NavLink>
+          </ul>
+      </div>
       </div>
 
       {/* Sliding Menu */}
+    
       <div
         className={`fixed top-0 left-0 right-0 bg-gray-800 text-white p-4 transform transition-transform duration-500 ease-in-out ${
           menuState ? 'translate-y-0' : '-translate-y-full'

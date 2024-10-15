@@ -70,15 +70,15 @@ const Form = () => {
 
   return (
     <>
-    <div className="flex flex-col items-center bg-[#1E1E2F] justify-center min-h-screen p-4">
-      <img src={images.userIc} alt="user-icon" className="h-16 mb-4" />
+    <div className="flex flex-col items-centerjustify-center  p-4 sm:w-[40%]">
+     
 
       <div className="text-center text-white mb-6">
         <h2 className="text-2xl font-semibold">Set Up Your Profile</h2>
         <p className="text-sm text-gray-400">Personalize your bio and experiences</p>
       </div>
 
-      <form className="flex flex-col w-full max-w-md bg-[#242837] p-6 rounded-lg shadow-md" onSubmit={handleLogin}>
+      <form className="flex flex-col  bg-[#242837] p-6 rounded-lg shadow-md" onSubmit={handleLogin}>
         {/* Full Name Input */}
         <div className="flex flex-col mb-4">
           <label htmlFor="userName" className="text-sm text-gray-400">Full Name</label>
@@ -236,7 +236,8 @@ const Form = () => {
 
       
     </div>
-    <MobileNav /> </>
+  
+     </>
   );
 };
 

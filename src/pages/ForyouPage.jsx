@@ -158,7 +158,7 @@ const HomeSection = () => {
   };
 
   return (
-    <div className="p-5 bg-[#1a1b22] text-white min-h-screen font-poppins">
+    <div className="p-5 bg-[#1a1b22] text-white w-[100vw] font-poppins">
       {/* Tabs Navigation */}
       <div className="flex justify-center space-x-6 bg-[#2c2f3f] p-4 rounded-lg shadow-md mb-8">
         <button

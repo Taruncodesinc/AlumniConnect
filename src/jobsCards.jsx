@@ -5,7 +5,7 @@ const JobCards = ({ title, company, Requirement, location, id, alumniId, onKnowM
   return (
     <div>
       {/* Card container with background color and padding */}
-      <div className='bg-[#2C3141] rounded-lg p-4 transition-transform transform hover:scale-105'>
+      <div className='bg-[#2C3141] sm:bg-[#a9a9a9] rounded-lg p-4 transition-transform transform hover:scale-105'>
 
         {/* Job details displayed using flex and font styling */}
         <div className='flex flex-col font-montserrat'>

@@ -37,9 +37,11 @@ const JobsPage = () => {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="font-montserrat">
   
-      <div className='bg-gray-900 text-white min-h-[100vh] flex flex-col'>
+      <div className='bg-gray-900 text-white w-[100vw] h-[100vh] flex flex-col'>
         
         {/* Top Section: Search Bar and Icons */}
         <div className='flex items-center justify-between px-6 py-4 gap-4'>
@@ -65,43 +67,45 @@ const JobsPage = () => {
           <h1 className='text-2xl font-poppins mb-6'>Recommended Jobs</h1>
 
           {/* Job Cards or Filtered Job Cards */}
-          {searchTerm === "" ? (
-            jobs.length > 0 ? (
-              jobs.map((job) => (
-                <div key={job.id}>
-                  <JobCards 
-                    {...job} 
-                    onKnowMore={() => handleKnowMoreClick(job)} // Pass click handler
-                  />
-                  <hr className='border-gray-600 my-4' />
-                </div>
-              ))
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {searchTerm === "" ? (
+              jobs.length > 0 ? (
+                jobs.map((job) => (
+                  <div key={job.id}>
+                    <JobCards 
+                      {...job} 
+                      onKnowMore={() => handleKnowMoreClick(job)} // Pass click handler
+                    />
+                  </div>
+                ))
+              ) : (
+                <p className="text-gray-400">No jobs available at the moment.</p>
+              )
             ) : (
-              <p className="text-gray-400">No jobs available at the moment.</p>
-            )
-          ) : (
-            filteredJobs.length > 0 ? (
-              filteredJobs.map((job) => (
-                <div key={job.id}>
-                  <JobCards 
-                    {...job} 
-                    onKnowMore={() => handleKnowMoreClick(job)} // Pass click handler
-                  />
-                  <hr className='border-gray-600 my-4' />
-                </div>
-              ))
-            ) : (
-              <p className="text-gray-400">No jobs found for your search.</p>
-            )
-          )}
+              filteredJobs.length > 0 ? (
+                filteredJobs.map((job) => (
+                  <div key={job.id}>
+                    <JobCards 
+                      {...job} 
+                      onKnowMore={() => handleKnowMoreClick(job)} // Pass click handler
+                    />
+                  </div>
+                ))
+              ) : (
+                <p className="text-gray-400">No jobs found for your search.</p>
+              )
+            )}
+          </div>
         </div>
 
         {/* Pop-up for job details */}
         {selectedJob && <JobDetailsPopup job={selectedJob} onClose={closePopup} />}
-        <MobileNav />
+        <MobileNav/>
       </div>
-  
+      
     </div>
+   
+    </>
   );
 };
 
