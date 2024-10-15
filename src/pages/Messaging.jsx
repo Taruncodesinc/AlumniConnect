@@ -23,9 +23,9 @@ const MessagingPage = () => {
 
   return (
     <>
-    <div className="flex flex-col bg-gray-900 text-white min-h-screen h-[100vh] w-[100vw]">
+    <div className="flex flex-col  text-white min-h-screen h-[100vh] w-[100vw] bg-red-500">
       <Navbar />
-      <div className="flex-grow p-4"> {/* This allows the content area to grow */}
+      <div className="flex-grow p-4 bg-pink-300"> {/* This allows the content area to grow */}
         <h1 className="text-3xl font-bold mb-6">Recent Chats</h1>
         <div className="space-y-4">
           {recentChats.map((chat) => (
