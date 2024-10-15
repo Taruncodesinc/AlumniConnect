@@ -71,8 +71,9 @@ console.log(alumniList);
           )}
         </div>
       </div>
-      <MobileNav/>
+      
     </div>
+    <MobileNav/>
      </>
   );
 };
