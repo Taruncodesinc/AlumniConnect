@@ -58,7 +58,7 @@ const ChatRoom = () => {
   };
 
   return (
-    <div className="text-white h-full p-4 bg flex flex-col">
+    <div className="text-white h-[100vh] p-4 bg flex flex-col">
     <div className="flex justify-between items-center">
       <h2 className="text-xl font-bold">Chat with {chatUser.name}</h2>
       <div className="flex space-x-4">
