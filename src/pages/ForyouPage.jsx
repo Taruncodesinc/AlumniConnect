@@ -30,13 +30,22 @@ const HomeSection = () => {
                   </h3>
                   <ul className="space-y-3 text-gray-300">
                     <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">
+
                       Understanding JavaScript Closures
+                      </a>
                     </li>
                     <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                      <a href="https://react.dev/reference/react/hooks">
+                   
                       How to Use React Hooks Effectively
+                      </a>
                     </li>
                     <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                      <a href='https://www.w3schools.com/css/css_grid.asp'>
                       Mastering CSS Grid Layout
+                      </a>
+                    
                     </li>
                   </ul>
                   
@@ -73,13 +82,21 @@ const HomeSection = () => {
                   </h3>
                   <ul className="space-y-3 text-gray-300">
                     <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
-                      React State Management with Redux
+                      <a href="https://youtube.com/playlist?list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&si=SWbb3PZqpGEyLG15">
+                     Java Script tutorials for Absolute Beginners
+                     </a>
                     </li>
                     <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
-                      Building a Full Stack App with Node.js
+                      < a href="https://youtube.com/playlist?list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&si=4bEITbt4yrxDTfj9">
+                    
+                      React js tutorials for beginner
+                      </a>
                     </li>
                     <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
-                      Tailwind CSS Best Practices
+                      <a href='https://youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA&si=cVvt7kchnOC6oTw_'>
+                    
+                     Data Structure and Algorithm with C++
+                     </a>
                     </li>
                   </ul>
                 </div>
@@ -91,13 +108,20 @@ const HomeSection = () => {
                   </h3>
                   <ul className="space-y-3 text-gray-300">
                     <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                      <a href="https://www.analyticsinsight.net/career/top-student-hackathons-for-2024">
+                     
                       Participate in the upcoming Hackathon
+                      </a>
                     </li>
                     <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                      <a href="https://www.udemy.com/course/graphql-from-ground-up/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Search_DSA_GammaCatchall_NonP_la.EN_cc.India&campaigntype=Search&portfolio=India&language=EN&product=Course&test=&audience=DSA&topic=&priority=Gamma&utm_content=deal4584&utm_term=">
                       Learn GraphQL with free resources
+                      </a>
                     </li>
                     <li className="border-b border-gray-600 pb-2 hover:text-white transition duration-200 ease-in-out cursor-pointer">
-                      Join our Web Development Bootcamp
+                     < a href='https://www.guvi.in/blog/top-technologies-to-learn-now/'>
+                     Top Technologies to learn in 2024
+                     </a>
                     </li>
                   </ul>
                 </div>
